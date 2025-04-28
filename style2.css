@@ -1,0 +1,314 @@
+@font-face {
+    font-family: 'beu';
+    src: url(font/beaufort-for-lol/BeaufortforLOL-Bold.ttf) format('truetype');
+
+}
+/* Estilos generales para el cuerpo */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; /* Eliminar márgenes por defecto */
+    padding: 0; /* Eliminar relleno por defecto */
+    color: #ebddc1; /* Color del texto */
+    background-image: url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Estilos para el encabezado */
+header {
+     /* Color de fondo del encabezado */
+    padding: 60px; /* Relleno interno */
+    text-align: center; /* Centrar el texto */
+    background-image: url(img/lol_logo_v2.png);
+    background-repeat: no-repeat;
+    background-size: 14% 90%;
+    background-position: center;
+}
+
+/* Estilos para el título del encabezado */
+header h1 {
+    margin: 0; /* Eliminar márgenes */
+    font-size: 2.5em; /* Tamaño de fuente */
+}
+p {
+    color: #c8aa6e;
+}
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-family: 'beu';
+    font: size 30px;;
+    color: #ebddc1;
+    text-align: left;
+    
+}
+.banner {
+    float: right;
+    width: 40%;
+    height: 40%;
+}
+h2 {
+    font-family: 'beu';
+    font: size 30px;;
+    color: #ebddc1;
+    text-align: left;
+   
+
+}
+h3{
+    font-family: 'beu';
+    font-size: 22px;
+    color: #ebddc1;
+    text-align: left;
+
+}
+h4{
+    font-family: 'beu';
+    font-size: 20px;
+    color: #ebddc1;
+    text-align: left;
+
+}
+.roles {
+    height: auto;
+    width: auto;
+}
+.Runaterra {
+    border: #c8aa6e 5px outset;
+    height: 100%;
+    width: 100%;
+}
+.mapa {
+    width: 30%;
+    height: 30%;
+    float: right;
+    margin-top: 0%;
+    margin-right: 0%;
+    border: #051829 5px solid;
+}
+.sums {
+    width: 5%;
+    height: 5%;
+}
+.elo {
+    width: 10%;
+    height: 10%;
+}
+.ciudades{
+    width: 750px;
+    height: 400px;
+}
+.ciudades2{
+    width: 750px;
+    height: 400px;
+    float: right;
+}
+.noxus {
+    height: 60px;
+    width: 70px;
+    float: left;
+    margin-right: 10px;
+}
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+
+}
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0px 5px 10px #051829 ;
+}
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .front h3 {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #e7e4ef ;
+    background: #051829;
+    text-align: center;
+}
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    color: #23001d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0px 5px 10px #051829 ;
+}
+.card .back img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+img {
+    width: 30px;
+    height: 30px;
+    margin: 1px;
+}
+hr{
+    border-color: #c8aa6e ;
+}
+/* Estilos para el menú de navegación */
+nav {
+    background-color: #051829; /* Color de fondo del menú */
+}
+
+/* Estilos para los enlaces del menú */
+nav ul {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0px; /* Eliminar relleno */
+    margin: 0px; /* Eliminar márgenes */
+    display: flex; /* Usar flexbox para el menú */
+    justify-content: space-around; /* Espaciado uniforme entre elementos */
+}
+
+/* Estilos para los elementos del menú */
+nav ul li {
+    position: relative; /* Posición relativa para el menú desplegable */
+}
+
+/* Estilos para los enlaces del menú */
+nav a {
+    display: block; /* Hacer que los enlaces ocupen todo el bloque */
+    color: #c8aa6e; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    padding: 14px 20px; /* Relleno interno */
+    text-decoration: none; /* Eliminar subrayado */
+}
+
+/* Cambiar el color de fondo al pasar el ratón sobre los enlaces */
+nav a:hover {
+    background-color: #092949; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilos para el menú desplegable */
+.desplegable-contenido {
+    display: none; /* Ocultar el contenido por defecto */
+    position: absolute; /* Posicionar el contenido de forma absoluta */
+    background-color: #092949; /* Color de fondo del contenido */
+    min-width: 160px; /* Ancho mínimo del contenido */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra */
+    z-index: 1; /* Asegurar que el contenido esté por encima */
+}
+
+/* Estilos para los enlaces dentro del menú desplegable */
+.desplegable-contenido a {
+    color: white; /* Color del texto */
+    padding: 12px 16px; /* Relleno interno */
+    text-align: left; /* Alinear el texto a la izquierda */
+}
+
+/* Cambiar el color de fondo al pasar el ratón sobre los enlaces del menú desplegable */
+.desplegable-contenido a:hover {
+    background-color: #c8aa6e; /* Color de fondo al pasar el ratón */
+}
+
+/* Mostrar el contenido del menú desplegable al pasar el ratón sobre el botón */
+.desplegable:hover .desplegable-contenido {
+    display: block; /* Mostrar el contenido */
+}
+
+/* Estilos para el aside */
+aside {
+    width: 180px; /* Ancho del aside */
+    float: left; /* Alinear a la izquierda */
+    background-color: #051829e6; /* Color de fondo del aside */
+    padding: 20px; /* Relleno interno */
+    margin: 0px; /* Margen alrededor */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    height: 100%;
+}
+a{
+    color: #c8aa6e;
+}
+/* Estilos para la tabla en el aside */
+aside table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Colapsar bordes */
+    
+}
+
+aside th {
+    background-color: #061f36; /* Color de fondo del encabezado de la tabla */
+    color: white; /* Color del texto */
+    padding: 10px; /* Relleno interno */
+}
+aside th:hover{
+    background-color: #092949; /* Color de fondo al pasar el ratón */
+}
+
+aside td {
+    padding: 10px; /* Relleno interno */
+    border-bottom: 1px solid #ccc; /* Línea inferior */
+}
+
+/* Estilos para el contenido principal */
+main {
+    margin-left: 220px; /* Margen izquierdo para evitar el aside */
+    padding: 90px; /* Relleno interno */
+    background-color: #061f36d6;
+    background: linear-gradient( to bottom, #061f36da, #05000fd4);
+    
+}
+aside.right{
+    width: 150px;
+    float: right;
+    background-image: url();
+}
+footer{
+    text-align: center; /* Alinear el texto al centro */
+    color: #c8aa6e;
+}
+#fondo2{
+    background-color: #f0f0f0; /* Color de fondo para el elemento */
+    background-image: url(img/fondo.jpg);
+}
+div.todo{
+margin-left: 20px
+}
+@media screen and (max-width: 768px) {
+    /* estilo para móviles verticales */
+  }
+  
+  @media screen and (max-width: 992px) {
+    /* estilo para tablets verticales */
+  }
+  
+  @media screen and (min-width: 1300px) {
+    /* ancho fijo para escritorio */
+    .todo{
+        flex-direction: row;
+    }
+  }

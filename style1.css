@@ -1,0 +1,221 @@
+@font-face {
+    font-family: 'beu';
+    src: url(font/beaufort-for-lol/BeaufortforLOL-Bold.ttf) format('truetype');
+
+}
+/* Estilos generales para el cuerpo */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; /* Eliminar márgenes por defecto */
+    padding: 0; /* Eliminar relleno por defecto */
+    color: #ebddc1; /* Color del texto */
+    background-image: url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+/* Estilos para el encabezado */
+header {
+     /* Color de fondo del encabezado */
+    padding: 60px; /* Relleno interno */
+    text-align: center; /* Centrar el texto */
+    background-image: url(img/lol_logo_v2.png);
+    background-repeat: no-repeat;
+    background-size: 14% 90%;
+    background-position: center;
+}
+.imgtft1{
+    height:40%;
+    width:40%;
+    align-items: center;
+    margin-left: 30%;
+    border: #051829 5px solid;
+ }
+ h2{
+    font-family: 'beu';
+    font: size 30px;;
+    color: #ebddc1;
+    text-align: center;
+    margin-top: 40%;
+ }
+h1 {
+    font-family: 'beu';
+    font: size 30px;;
+    color: #ebddc1;
+    text-align: left;
+}
+hr{
+    border-color: #c8aa6e ;
+}
+/* Estilos para el menú de navegación */
+nav {
+    background-color: #051829; /* Color de fondo del menú */
+}
+
+/* Estilos para los enlaces del menú */
+nav ul {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0px; /* Eliminar relleno */
+    margin: 0px; /* Eliminar márgenes */
+    display: flex; /* Usar flexbox para el menú */
+    justify-content: space-around; /* Espaciado uniforme entre elementos */
+}
+
+/* Estilos para los elementos del menú */
+nav ul li {
+    position: relative; /* Posición relativa para el menú desplegable */
+}
+
+/* Estilos para los enlaces del menú */
+nav a {
+    display: block; /* Hacer que los enlaces ocupen todo el bloque */
+    color: #c8aa6e; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    padding: 16px 20px; /* Relleno interno */
+    text-decoration: none; /* Eliminar subrayado */
+}
+
+/* Cambiar el color de fondo al pasar el ratón sobre los enlaces */
+nav a:hover {
+    background-color: #092949; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilos para el menú desplegable */
+.desplegable-contenido {
+    display: none; /* Ocultar el contenido por defecto */
+    position: absolute; /* Posicionar el contenido de forma absoluta */
+    background-color: #092949; /* Color de fondo del contenido */
+    min-width: 160px; /* Ancho mínimo del contenido */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra */
+    z-index: 1; /* Asegurar que el contenido esté por encima */
+}
+
+/* Estilos para los enlaces dentro del menú desplegable */
+.desplegable-contenido a {
+    color: white; /* Color del texto */
+    padding: 12px 16px; /* Relleno interno */
+    text-align: left; /* Alinear el texto a la izquierda */
+}
+
+/* Cambiar el color de fondo al pasar el ratón sobre los enlaces del menú desplegable */
+.desplegable-contenido a:hover {
+    background-color: #c8aa6e; /* Color de fondo al pasar el ratón */
+}
+
+/* Mostrar el contenido del menú desplegable al pasar el ratón sobre el botón */
+.desplegable:hover .desplegable-contenido {
+    display: block; /* Mostrar el contenido */
+}
+
+/* Estilos para el aside */
+aside {
+    width: 180px; /* Ancho del aside */
+    float: left; /* Alinear a la izquierda */
+    background-color: #051829e6; /* Color de fondo del aside */
+    padding: 20px; /* Relleno interno */
+    margin: 0px; /* Margen alrededor */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    height: 100%;
+}
+a{
+    color: #c8aa6e;
+}
+/* Estilos para la tabla en el aside */
+aside table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Colapsar bordes */
+    
+}
+
+aside th {
+    background-color: #061f36; /* Color de fondo del encabezado de la tabla */
+    color: white; /* Color del texto */
+    padding: 10px; /* Relleno interno */
+}
+aside th:hover{
+    background-color: #092949; /* Color de fondo al pasar el ratón */
+}
+
+aside td {
+    padding: 5%; /* Relleno interno */
+    border-bottom: 1px solid #ccc; /* Línea inferior */
+}
+
+/* Estilos para el contenido principal */
+main {
+    margin-left: 220px; /* Margen izquierdo para evitar el aside */
+    padding: 90px; /* Relleno interno */
+    background-color: #061f36d6;
+    
+}
+#fondo2{
+    background-color: #f0f0f0; /* Color de fondo para el elemento */
+    background-image: url(img/fondo.jpg);
+}
+div.todo{
+margin-left: 2%
+}
+footer{
+    text-align: center; /* Alinear el texto al centro */
+    color: #c8aa6e;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin-right: 70%;
+    margin-left: 30%;
+}
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s; 
+}
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0px 5px 10px #000;
+}
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    box-shadow: 0px 5px 10px #000;
+    background-color: rgb(3,35,54);
+    padding: 15px;
+    color: #c8aa6e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow:0px 5px 10px #000;
+}
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+ }
+ .card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+ }
+@media screen and (max-width: 768px) {
+    /* estilo para móviles verticales */
+  }
+  
+  @media screen and (max-width: 992px) {
+    /* estilo para tablets verticales */
+  }
+  
+  @media screen and (min-width: 1300px) {
+    /* ancho fijo para escritorio */
+    .todo{
+        flex-direction: row;
+    }
+  }
